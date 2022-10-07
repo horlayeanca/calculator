@@ -27,7 +27,7 @@ function App() {
       digits.push(
         <button
           onClick={() => updateCalc(i.toString())}
-          className="text-xl text-white p-4 cursor-pointer border-none appearance-none rounded-full outline-none hover:bg-slate-600 duration-500 flex-1"
+          className="text-xl text-black p-4 cursor-pointer border-none appearance-none rounded-full outline-none hover:bg-slate-600 duration-500 hover:text-white flex-1"
           key={i}
         >
           {i}
@@ -47,41 +47,41 @@ function App() {
   };
 
   return (
-    <div className="bg-emerald-100">
+    <div className="bg-white">
       <div className="flex h-screen items-center justify-center">
-        <div className="w-full max-w-md bg-gradient-to-b from-lime-500 to-cyan-500 rounded-lg overflow-hidden shadow-xl">
-          <div className="p-4 text-right to-emerald-700 text-black text-3xl font-light rounded-lg border-8 border-slate-500">
+        <div className="w-full max-w-md bg-stone-300 rounded-lg overflow-hidden shadow-xl">
+          <div className="p-4 text-right bg-white text-black text-3xl font-light rounded-lg border-8 border-stone-300">
             {calc || "0"}
           </div>
           <div className="grid grid-flow-col">
             <button
               onClick={() => updateCalc("/")}
-              className="text-xl text-white p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400"
+              className="text-xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
             >
               /
             </button>
             <button
               onClick={() => updateCalc("*")}
-              className="text-xl text-white p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400"
+              className="text-xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
             >
               *
             </button>
             <button
               onClick={() => updateCalc("+")}
-              className="text-xl text-white p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400"
+              className="text-xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
             >
               +
             </button>
             <button
               onClick={() => updateCalc("-")}
-              className="text-xl text-white p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400"
+              className="text-xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
             >
               -
             </button>
 
             <button
               onClick={deletePrevious}
-              className="text-xl text-white p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400"
+              className="text-xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
             >
               DEL
             </button>
@@ -90,19 +90,19 @@ function App() {
             {createDigits()}
             <button
               onClick={() => updateCalc("0")}
-              className="text-xl text-white p-4 cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500"
+              className="text-xl text-black p-4 cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500 hover:text-white"
             >
               0
             </button>
             <button
               onClick={() => updateCalc(".")}
-              className="text-xl text-white p-4 cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500"
+              className="text-xl text-black p-4 cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500 hover:text-white"
             >
               .
             </button>
             <button
               onClick={solution}
-              className="text-xl text-white p-4 cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500"
+              className="text-xl text-black p-4 cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500 hover:text-white"
             >
               =
             </button>
