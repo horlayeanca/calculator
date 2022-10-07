@@ -27,7 +27,7 @@ function App() {
       digits.push(
         <button
           onClick={() => updateCalc(i.toString())}
-          className="text-xl text-black p-4 cursor-pointer border-none appearance-none rounded-full outline-none hover:bg-slate-600 duration-500 hover:text-white flex-1"
+          className="text-2xl text-black p-4 cursor-pointer border-none appearance-none rounded-full outline-none hover:bg-slate-600 duration-500 hover:text-white flex-1"
           key={i}
         >
           {i}
@@ -53,56 +53,56 @@ function App() {
           <div className="p-4 text-right bg-white text-black text-3xl font-light rounded-lg border-8 border-stone-300">
             {calc || "0"}
           </div>
-          <div className="grid grid-flow-col">
+          <div className="grid grid-flow-col gap-2 mx-2 my-2">
             <button
               onClick={() => updateCalc("/")}
-              className="text-xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
+              className="text-2xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
             >
               /
             </button>
             <button
               onClick={() => updateCalc("*")}
-              className="text-xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
+              className="text-2xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
             >
               *
             </button>
             <button
               onClick={() => updateCalc("+")}
-              className="text-xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
+              className="text-2xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
             >
               +
             </button>
             <button
               onClick={() => updateCalc("-")}
-              className="text-xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
+              className="text-2xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
             >
               -
             </button>
 
             <button
               onClick={deletePrevious}
-              className="text-xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
+              className="text-2xl text-black p-4 cursor-pointer border-none rounded-full appearance-none outline-none duration-500 hover:bg-slate-400 hover:text-white"
             >
               DEL
             </button>
           </div>
-          <div className="text-xl text-white cursor-pointer border-none appearance-none outline-none grid grid-cols-3">
+          <div className="text-2xl text-white cursor-pointer border-none appearance-none outline-none grid grid-cols-3 gap-3 mx-2 my-2">
             {createDigits()}
             <button
               onClick={() => updateCalc("0")}
-              className="text-xl text-black p-4 cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500 hover:text-white"
+              className="text-2xl text-black p-4 rounded-full cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500 hover:text-white"
             >
               0
             </button>
             <button
               onClick={() => updateCalc(".")}
-              className="text-xl text-black p-4 cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500 hover:text-white"
+              className="text-2xl text-black p-4 rounded-full cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500 hover:text-white"
             >
               .
             </button>
             <button
               onClick={solution}
-              className="text-xl text-black p-4 cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500 hover:text-white"
+              className="text-2xl text-black p-4 rounded-full cursor-pointer border-none appearance-none outline-none hover:bg-slate-600 duration-500 hover:text-white"
             >
               =
             </button>
