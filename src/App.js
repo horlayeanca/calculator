@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="bg-white">
       <div className="flex h-screen items-center justify-center">
-        <div className="w-full max-w-md bg-stone-300 rounded-lg overflow-hidden shadow-xl">
+        <div className="w-full max-w-md bg-stone-300 rounded-lg overflow-hidden shadow-xl mx-3">
           <div className="p-4 text-right bg-white text-black text-3xl font-light rounded-lg border-8 border-stone-300">
             {calc || "0"}
           </div>
